@@ -1,5 +1,5 @@
-function ImageShow(){
-    return <div>App!</div>
+function ImageShow({image}){
+    return <div>{image.id}</div>
 }
 
 export default ImageShow;
