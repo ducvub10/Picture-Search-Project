@@ -1,11 +1,12 @@
+import './ImageList.css'
 import ImageShow from "./ImageShow";
 function ImageList({images}){
     const renderedImages = images.map((image) => {
-        return <ImageShow image = {image} /> //take each element, turn it into another form.
-        
+        return <ImageShow key = {image.id} image = {image} /> //take each element, turn it into another form.
+
     })  
 
-    return <div>{renderedImages}</div>
+    return <div className='image-list'>{renderedImages}</div>
 }
 
 
